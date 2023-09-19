@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic-Tac-Toe</title>
+        <script src="./ticTacToe.js"></script>
+    </head>
+    <style>
+        table { 
+            table-layout: fixed;
+            margin-left:auto;
+            margin-right:auto;
+         }
+        td { 
+            width: 80px;
+            height: 80px;
+            padding: 10px;
+            border: solid;
+            border-width: 1px;
+            border-left: solid;
+            border-right: solid;
+            text-align: center;
+            font-size: xx-large;
+        }      
+        
+        </style>
+    <body>
+        <h1 id="texto" style="margin: 20px; text-align: center;">Começa Jogador 1</h1>
+        <table style="border-collapse: collapse;" >
+            <tr id="top">
+                <td id="one"    style="border-top: none; border-left: none;">1</td>
+                <td id="two"    style="border-top: none;">2</td>
+                <td id="three"  style="border-top: none; border-right: none;">3</td>
+            </tr>
+
+            <tr id="mid">
+                <td id="four"   style="border-left: none;">4</td>
+                <td id="five">5</td>
+                <td id="six"    style="border-right: none;">6</td>
+            </tr>
+            <tr id="bot">
+                <td id="seven"  style="border-bottom: none; border-left: none;">7</td>
+                <td id="eight"  style="border-bottom: none;">8</td>
+                <td id="nine"   style="border-bottom: none; border-right: none;">9</td>
+            </tr>
+        </table>
+        <div style="text-align: center; margin: 20px;">
+            <input type="text" id="jogada" placeholder="Número" onkeypress="keyPress()" style="font-size: 20px; height: 30px;">
+            <button id="button" onclick="reset()" style="padding: 10px; height: 36px; width: 70px;">Reset</button>
+        </div>
+    </body>
+</html>
